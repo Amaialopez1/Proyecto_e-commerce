@@ -126,6 +126,7 @@ section article {
   list-style: none;
 }
 .linksUl li a {
+  color: rgba(192, 55, 55, 1);
   margin-left: 20px;
   display: flex;
   flex-direction: row;
