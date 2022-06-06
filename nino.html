@@ -164,24 +164,28 @@
 
     let text = "lol" // текст, який ми хочимо вставити
     
-    let i=0;// 
+    let i=1;// 
     let amount=0; // cкільки товарів ми вже загрузили
     let r=''; // силку на фото, яку ми хочимо вставити
-    while ( amount < 16 && i <100){
-  
+    while ( amount < 16 && i <99){
+      console.log("i = ",i)
+      console.log(data[i]["Niño/Adulto"] == "Niño" )
+
     
         if(data[i]["Niño/Adulto"] == "Niño" ){  
             text = data[i]["Categoria"];
             // text=text+" "+data[i]["Articulo"]
+            i++;
             r = "img/"+i+".png"
             console.log(idname[amount])
             // console.log(document.getElementById(idname[amount]).innerHTML)
             console.log(text)
             console.log(r)
             amount++;
-            i++;
+            
             document.getElementById(idname[amount]).innerHTML = text;
             document.getElementById(idimg[amount]).src =  r;
+           
         }
         else{ i++;}
       }
