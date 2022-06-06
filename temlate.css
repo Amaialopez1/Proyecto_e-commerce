@@ -4,7 +4,7 @@
 
 /* Style the body */
 body {
-  /* font: Arial;  */
+ 
   margin: 0;
   background-color: rgb(192 55 55 / 50%);
 }
@@ -26,6 +26,7 @@ body {
 .product {
   width: 300px;
   height: 300px;
+  margin:20px;
 }
 
 /* Fake image, just for this example */
@@ -38,6 +39,7 @@ body {
 #name1 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 2 */
@@ -49,6 +51,7 @@ body {
 #name2 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 3 */
@@ -60,6 +63,7 @@ body {
 #name3 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 4 */
@@ -71,6 +75,7 @@ body {
 #name4 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 5 */
@@ -82,6 +87,7 @@ body {
 #name5 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 6 */
@@ -93,6 +99,7 @@ body {
 #name6 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 7 */
@@ -104,6 +111,7 @@ body {
 #name7 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 8 */
@@ -114,6 +122,8 @@ body {
 
 #name8 {
   margin: 0;
+  text-align: center;
+  font: Arial; 
 }
 
 /* 8 */
@@ -125,6 +135,7 @@ body {
 #name9 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 10 */
@@ -135,6 +146,7 @@ body {
 
 #name10 {
   margin: 0;
+  font: Arial; 
   text-align: center;
 }
 
@@ -147,6 +159,7 @@ body {
 #name11 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 12 */
@@ -158,6 +171,7 @@ body {
 #name12 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 13 */
@@ -169,6 +183,7 @@ body {
 #name13 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 14 */
@@ -180,6 +195,7 @@ body {
 #name14 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 15 */
@@ -191,6 +207,7 @@ body {
 #name15 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* 15 */
@@ -202,6 +219,7 @@ body {
 #name16 {
   margin: 0;
   text-align: center;
+  font: Arial; 
 }
 
 /* Style the navigation bar links */
