@@ -173,7 +173,7 @@
     while ( amount < 16 && i <100){
   
     
-        if(data[i]["Niño/Adulto"] == "Adulto" && (data[i]["Sexo"] == "F" ||data[i]["Sexo"] == "Unisex" )){  
+        if(data[i]["Niño/Adulto"] == "Adulto" && (data[i]["Sexo"] == "F" )){  
             text = data[i]["Categoria"];
             // text=text+" "+data[i]["Articulo"]
             r = "img/"+i+".png"
@@ -185,7 +185,7 @@
             amount++;
             i++;
             document.getElementById(idname[amount]).innerHTML = text;
-            document.getElementById(idimg[amount]).srс = r;
+            document.getElementById(idimg[amount]).src =  r;
         }
         else{ i++;}
       }

@@ -175,15 +175,18 @@
         if(data[i]["Niño/Adulto"] == "Adulto" && (data[i]["Sexo"] == "M" ||data[i]["Sexo"] == "Unisex" )){  
             text = data[i]["Categoria"];
             // text=text+" "+data[i]["Articulo"]
-            r = "img/"+i+".png"
+           
+            r = 'img/'+i+'.png'
+
             console.log(idname[amount])
+            console.log(idimg[amount])
             // console.log(document.getElementById(idname[amount]).innerHTML)
             console.log(text)
             console.log(r)
             amount++;
             i++;
             document.getElementById(idname[amount]).innerHTML = text;
-            document.getElementById(idimg[amount]).srс = r;
+            document.getElementById(idimg[amount]).src =  r;
         }
         else{ i++;}
       }
