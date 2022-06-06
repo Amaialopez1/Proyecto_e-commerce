@@ -158,7 +158,8 @@
     </div>
     <script  src="data.js" type="text/javascript"></script>
     <script>
-      data=get_data()
+      data=get_data()//отримуємо наші дані з data.js завдяки функції,яка написана в тому же файлі(у самому кінці)
+      //наші id елементів, які треба заповнити
       const idname=['name1','name2','name3','name4','name5','name6','name7','name8',
         'name9','name10','name11','name12','name13','name14','name15','name16']; // id назв товарів
       const idimg=['fakeimg1','fakeimg2','fakeimg3','fakeimg4','fakeimg5','fakeimg6','fakeimg7','fakeimg8',
@@ -166,19 +167,20 @@
 
     let text = "lol" // текст, який ми хочимо вставити
     
-    let i=50;// 
-    let amount=0; // cкільки товарів ми вже загрузили
+    let i=50;// лічильник в базі даних
+    let amount=0; // cкільки товарів ми вже загрузили, лічильник в масивах id, які треба заповнити
+    // інаціалізуємо зміні ,якими будеме заповняти елементи
     let r=''; // силку на фото, яку ми хочимо вставити
-    while ( amount < 16 && i <100){
+    while ( amount < 16 && i <100){// поки ми не заповнемо усі елементи чи не закінчуться дані
   
      
             text = data[i]["Categoria"];
             i++;
             r = "img/"+i+".png"
-            console.log(idname[amount])
+            //console.log(idname[amount])
             // console.log(document.getElementById(idname[amount]).innerHTML)
-            console.log(text)
-            console.log(r)
+            //console.log(text)
+            //console.log(r)
             amount++;
             i++;
             document.getElementById(idname[amount]).innerHTML = text;
