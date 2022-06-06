@@ -168,12 +168,12 @@
     let amount=0; // cкільки товарів ми вже загрузили
     let r=''; // силку на фото, яку ми хочимо вставити
     while ( amount < 16 && i <99){
-      console.log("i = ",i)
-      console.log(data[i]["Niño/Adulto"] == "Niño" )
+      //console.log("i = ",i)
+      //console.log(data[i]["Niño/Adulto"] == "Niño" )
 
     
-        if(data[i]["Niño/Adulto"] == "Niño" ){  
-            text = data[i]["Categoria"];
+        if(data[i]["Niño/Adulto"] == "Niño" ){  //крітерій
+            text = data[i]["Categoria"]; // заповнення назву продукту
             // text=text+" "+data[i]["Articulo"]
             i++;
             r = "img/"+i+".png"

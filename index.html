@@ -174,17 +174,19 @@
     while ( amount < 16 && i <100){// поки ми не заповнемо усі елементи чи не закінчуться дані
   
      
-            text = data[i]["Categoria"];
-            i++;
-            r = "img/"+i+".png"
+            text = data[i]["Categoria"]; // заповнення назву продукту
+            i++; // добавляємо лічильник ,щоб шов далі і одночасно(тому саме тут), перша фотка відповідає 0 елементу в базі даних 
+            //друга фотка відповідає першому елементу в базі даних
+            //третя фотка відповідає другому елементу в базі даних  принціп ти вже поняла
+            r = "img/"+i+".png" // заповнення src для фотки продукту
             //console.log(idname[amount])
             // console.log(document.getElementById(idname[amount]).innerHTML)
             //console.log(text)
             //console.log(r)
-            amount++;
+            amount++; //добавляємо лічильник ,щоб шов далі
             i++;
-            document.getElementById(idname[amount]).innerHTML = text;
-            document.getElementById(idimg[amount]).src =  r;
+            document.getElementById(idname[amount]).innerHTML = text; //вставка даних
+            document.getElementById(idimg[amount]).src =  r; //вставка src
     
       }
 
