@@ -155,7 +155,6 @@
       </div>
     </div>
     <script  src="data.js" type="text/javascript"></script>
-    <script  src="nino.js" type="text/javascript"></script>
     <script>
       data=get_data()
       const idname=['name1','name2','name3','name4','name5','name6','name7','name8',
@@ -174,7 +173,7 @@
         if(data[i]["Niño/Adulto"] == "Niño" ){  
             text = data[i]["Categoria"];
             // text=text+" "+data[i]["Articulo"]
-            r = data[i]["Dirección de imagen"]
+            r = "img/"+i+".png"
             console.log(idname[amount])
             // console.log(document.getElementById(idname[amount]).innerHTML)
             console.log(text)
@@ -182,7 +181,7 @@
             amount++;
             i++;
             document.getElementById(idname[amount]).innerHTML = text;
-            document.getElementById(idimg[amount]).scr = r;
+            document.getElementById(idimg[amount]).srс = r;
         }
         else{ i++;}
       }

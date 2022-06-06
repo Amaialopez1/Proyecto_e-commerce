@@ -175,7 +175,7 @@
         if(data[i]["Niño/Adulto"] == "Adulto" && (data[i]["Sexo"] == "M" ||data[i]["Sexo"] == "Unisex" )){  
             text = data[i]["Categoria"];
             // text=text+" "+data[i]["Articulo"]
-            r = data[i]["Dirección de imagen"]
+            r = "img/"+i+".png"
             console.log(idname[amount])
             // console.log(document.getElementById(idname[amount]).innerHTML)
             console.log(text)
@@ -183,7 +183,7 @@
             amount++;
             i++;
             document.getElementById(idname[amount]).innerHTML = text;
-            document.getElementById(idimg[amount]).scr = r;
+            document.getElementById(idimg[amount]).srс = r;
         }
         else{ i++;}
       }
